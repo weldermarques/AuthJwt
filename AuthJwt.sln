@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthJwt.Api", "AuthJwt.Api\AuthJwt.Api.csproj", "{FD38A058-2282-4403-9584-8CD2842A7AA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthJwt.Core", "AuthJwt.Core\AuthJwt.Core.csproj", "{65EB3E87-5B87-4CB1-80A5-2F983FD5EF37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthJwt.Infra", "AuthJwt.Infra\AuthJwt.Infra.csproj", "{57C26520-F054-4C87-846A-805E3A32C16C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD38A058-2282-4403-9584-8CD2842A7AA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD38A058-2282-4403-9584-8CD2842A7AA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD38A058-2282-4403-9584-8CD2842A7AA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD38A058-2282-4403-9584-8CD2842A7AA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65EB3E87-5B87-4CB1-80A5-2F983FD5EF37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65EB3E87-5B87-4CB1-80A5-2F983FD5EF37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65EB3E87-5B87-4CB1-80A5-2F983FD5EF37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65EB3E87-5B87-4CB1-80A5-2F983FD5EF37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57C26520-F054-4C87-846A-805E3A32C16C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57C26520-F054-4C87-846A-805E3A32C16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57C26520-F054-4C87-846A-805E3A32C16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57C26520-F054-4C87-846A-805E3A32C16C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

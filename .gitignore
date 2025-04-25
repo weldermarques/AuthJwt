@@ -1,0 +1,59 @@
+﻿# Build results
+bin/
+obj/
+out/
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# VS Code (caso alguém use)
+.vscode/
+
+# Dotnet specific
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.dbmdl
+*.bak
+*.log
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Entity Framework
+Migrations/
+
+# Logs
+*.log
+logs/
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Dependency directories
+node_modules/
+packages/
+bower_components/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Optional: IDE settings for other editors
+*.idea/
+*.vs/
+
+# Appsettings
+appsettings.**.json
