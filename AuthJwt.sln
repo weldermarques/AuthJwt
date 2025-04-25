@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthJwt.Core", "AuthJwt.Cor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthJwt.Infra", "AuthJwt.Infra\AuthJwt.Infra.csproj", "{57C26520-F054-4C87-846A-805E3A32C16C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthJwt.Tests.UnitTests", "AuthJwt.Tests.UnitTests\AuthJwt.Tests.UnitTests.csproj", "{D23BFE3E-E78F-4518-95BA-A3DA5E53422B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{57C26520-F054-4C87-846A-805E3A32C16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57C26520-F054-4C87-846A-805E3A32C16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57C26520-F054-4C87-846A-805E3A32C16C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D23BFE3E-E78F-4518-95BA-A3DA5E53422B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D23BFE3E-E78F-4518-95BA-A3DA5E53422B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D23BFE3E-E78F-4518-95BA-A3DA5E53422B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D23BFE3E-E78F-4518-95BA-A3DA5E53422B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
