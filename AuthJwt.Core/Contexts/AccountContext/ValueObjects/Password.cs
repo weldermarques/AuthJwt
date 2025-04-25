@@ -1,7 +1,7 @@
-﻿using AuthJwt.Core.SharedContext.ValueObjects;
+﻿using AuthJwt.Core.Contexts.SharedContext.ValueObjects;
 using SecureIdentity.Password;
 
-namespace AuthJwt.Core.AccountContext.ValueObjects;
+namespace AuthJwt.Core.Contexts.AccountContext.ValueObjects;
 
 public class Password : ValueObject
 {
@@ -24,6 +24,6 @@ public class Password : ValueObject
         => PasswordGenerator.Generate();
     private static string Hashing(string plainTextPassword)
         => PasswordHasher.Hash(plainTextPassword, privateKey: Configuration.Secrets.PasswordSaltKey);
-    private static bool Verify(string plainTextPassword, string hashPassword)
+    public static bool Verify(string plainTextPassword, string hashPassword)
         => PasswordHasher.Verify(hashPassword, plainTextPassword);
 }

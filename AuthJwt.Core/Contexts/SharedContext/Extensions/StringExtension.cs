@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace AuthJwt.Core.SharedContext.Extensions;
+namespace AuthJwt.Core.Contexts.SharedContext.Extensions;
 
 public static class StringExtension
 {

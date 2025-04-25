@@ -1,13 +1,13 @@
-﻿using AuthJwt.Core.SharedContext.ValueObjects;
+﻿using AuthJwt.Core.Contexts.SharedContext.ValueObjects;
 
-namespace AuthJwt.Core.AccountContext.ValueObjects;
+namespace AuthJwt.Core.Contexts.AccountContext.ValueObjects;
 
 public class Verification() : ValueObject
 {
     public string Code { get; } = Guid.NewGuid().ToString("N")[..6].ToUpper();
-    public DateTime? ExpiresAt { get; private set; } = DateTime.UtcNow.AddMinutes(5);
-    public DateTime? VerifiedAt { get; private set; } = null;
-    private bool IsActive => VerifiedAt != null && ExpiresAt == null;
+    public DateTime? ExpiresAt { get; set; } = DateTime.UtcNow.AddMinutes(5);
+    public DateTime? VerifiedAt { get; set; } = null;
+    public bool IsActive => VerifiedAt != null && ExpiresAt == null;
 
     public void Verify(string code)
     {

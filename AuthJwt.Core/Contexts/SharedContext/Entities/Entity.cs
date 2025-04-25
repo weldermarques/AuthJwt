@@ -1,4 +1,4 @@
-﻿namespace AuthJwt.Core.SharedContext.Entities;
+﻿namespace AuthJwt.Core.Contexts.SharedContext.Entities;
 
 public abstract class Entity : IEquatable<Guid>
 {

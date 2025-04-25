@@ -1,7 +1,7 @@
-﻿using AuthJwt.Core.AccountContext.ValueObjects;
-using AuthJwt.Core.SharedContext.Entities;
+﻿using AuthJwt.Core.Contexts.AccountContext.ValueObjects;
+using AuthJwt.Core.Contexts.SharedContext.Entities;
 
-namespace AuthJwt.Core.AccountContext.Entities;
+namespace AuthJwt.Core.Contexts.AccountContext.Entities;
 
 public class User : Entity
 {
@@ -18,7 +18,7 @@ public class User : Entity
     
     public string Name { get; private set; } = string.Empty;
     public Email Email { get; private set; }
-    private Password Password { get; set; } = null!;
+    public Password Password { get; private set; } = null!;
     public string Image { get; private set; } = string.Empty;
 
     public void UpdatePassword(string plainTextPassword, string code)

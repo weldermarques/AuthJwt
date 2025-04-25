@@ -1,8 +1,8 @@
-﻿using AuthJwt.Core.SharedContext.Extensions;
-using AuthJwt.Core.SharedContext.ValueObjects;
+﻿using AuthJwt.Core.Contexts.SharedContext.Extensions;
+using AuthJwt.Core.Contexts.SharedContext.ValueObjects;
 using System.Text.RegularExpressions;
 
-namespace AuthJwt.Core.AccountContext.ValueObjects;
+namespace AuthJwt.Core.Contexts.AccountContext.ValueObjects;
 
 public partial class Email: ValueObject
 {
@@ -27,7 +27,7 @@ public partial class Email: ValueObject
             throw new Exception("Email inválido");
     }
 
-    private string Address { get; } 
+    public string Address { get; } 
     public string Hash => Address.ToBase64();
     public Verification Verification { get; private set; } = new();
 

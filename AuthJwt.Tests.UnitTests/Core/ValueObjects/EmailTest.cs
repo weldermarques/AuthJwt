@@ -1,5 +1,4 @@
-﻿using AuthJwt.Core.AccountContext.ValueObjects;
-using Xunit.Sdk;
+﻿using AuthJwt.Core.Contexts.AccountContext.ValueObjects;
 
 namespace AuthJwt.Tests.UnitTests.Core.ValueObjects;
 
