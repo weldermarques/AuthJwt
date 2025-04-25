@@ -43,8 +43,7 @@ public class UserMap : IEntityTypeConfiguration<User>
         builder.OwnsOne(x => x.Email)
             .OwnsOne( s => s.Verification)
             .Property(s => s.VerifiedAt)
-            .HasColumnName("EmailVerificationVerifiedAt")
-            .IsRequired();
+            .HasColumnName("EmailVerificationVerifiedAt");
         
         builder.OwnsOne(x => x.Email)
             .OwnsOne( s => s.Verification)
@@ -52,7 +51,7 @@ public class UserMap : IEntityTypeConfiguration<User>
         
         builder.OwnsOne(x => x.Password)
             .Property(s => s.Hash)
-            .HasMaxLength(50)
+            .HasMaxLength(100)
             .HasColumnName("PasswordHash")
             .IsRequired();
         

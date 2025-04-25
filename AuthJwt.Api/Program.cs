@@ -5,8 +5,17 @@ builder.AddConfiguration();
 builder.AddDatabase();
 builder.AddJwtAuthentication();
 
-var app = builder.Build();
+builder.AddAccountContext();
 
-app.MapGet("/", () => "Hello World!");
+builder.AddMediator();
+
+var app = builder.Build();
+app.UseRouting();
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.MapAccountEndpoints();
+
+
 
 app.Run();
