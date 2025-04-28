@@ -17,13 +17,17 @@ public class Password : ValueObject
 
         Hash = Hashing(plainTextPassword);
     }
+    
+    public bool Challenge(string plainTextPassword)
+        => Verify(plainTextPassword, Hash);
+    
     public string Hash { get; } = string.Empty;
     public string ResetCode { get; } = Guid.NewGuid().ToString("N")[..8].ToUpper();
-
+    
     private static string Generate()
         => PasswordGenerator.Generate();
     private static string Hashing(string plainTextPassword)
         => PasswordHasher.Hash(plainTextPassword, privateKey: Configuration.Secrets.PasswordSaltKey);
-    public static bool Verify(string plainTextPassword, string hashPassword)
-        => PasswordHasher.Verify(hashPassword, plainTextPassword);
+    private static bool Verify(string plainTextPassword, string hashPassword)
+        => PasswordHasher.Verify(hashPassword, plainTextPassword, privateKey: Configuration.Secrets.PasswordSaltKey);
 }

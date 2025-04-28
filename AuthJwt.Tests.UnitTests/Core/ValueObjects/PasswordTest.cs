@@ -15,6 +15,6 @@ public class PasswordTest
     public void VerifyShouldReturnTrueWhenPasswordMatchesHash()
     {
         var password = new Password("senhasecreta");
-        Assert.True(Password.Verify("senhasecreta", password.Hash));
+        Assert.True(password.Challenge("senhasecreta"));
     }
 }
