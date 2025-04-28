@@ -69,7 +69,7 @@ public class Handler(IRepository repository) : IRequestHandler<Request, Response
                 Id = user.Id.ToString(),
                 Name = user.Name,
                 Email = user.Email,
-                Roles = []
+                Roles = user.Roles.Select(x => x.Name).ToArray()
             };
             
             return new Response(string.Empty, data);
